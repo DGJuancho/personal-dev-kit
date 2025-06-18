@@ -1,0 +1,30 @@
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuración de entorno y credenciales
+.env
+
+# Logs y archivos temporales
+*.log
+*.tmp
+*.bak
+.cache/
+tmp/
+
+# Dependencias comunes
+node_modules/
+vendor/
+__pycache__/
+
+# Archivos de compilación
+*.class
+*.jar
+*.exe
+*.dll
+
+# IDE y editores
+.vscode/
+.idea/
+.settings/
+*.iml
