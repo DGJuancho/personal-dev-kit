@@ -42,15 +42,39 @@ chore🧱(estructura): reorganiza carpetas base del kit
 
 ## 🛠️ Alias recomendados
 
-Define atajos útiles en tu entorno:
+Define atajos útiles en tu entorno para agilizar el flujo de trabajo con Git y la terminal:
 
-```bash
-alias gs='git status'
-alias ga='git add .'
-alias gc='git commit -m'
-alias gp='git push'
-alias gpl='git pull'
-```
+### 🔧 Git
+
+| Alias   | Comando                                 | Descripción                                       |
+| ------- | --------------------------------------- | ------------------------------------------------- |
+| `gs`    | `git status`                            | Ver estado del repositorio                        |
+| `ga`    | `git add .`                             | Añadir todos los archivos modificados             |
+| `gai`   | `git add -i`                            | Añadir archivos de forma interactiva (por número) |
+| `gap`   | `git add -p`                            | Añadir fragmentos de código (por bloque/hunk)     |
+| `gdiff` | `git diff --color`                      | Ver diferencias con resaltado antes del stage     |
+| `gc`    | `git commit -m`                         | Commit con mensaje directo                        |
+| `gp`    | `git push`                              | Enviar commits al repositorio remoto              |
+| `gpl`   | `git pull`                              | Traer actualizaciones del repositorio remoto      |
+| `gl`    | `git log --oneline --graph --decorate`  | Historial compacto y visual                       |
+| `gll`   | `git log --graph --pretty=format:"..."` | Historial detallado con autor, fecha y ramas      |
+
+### 🖥️ Sistema
+
+| Alias | Comando                                   | Descripción                |
+| ----- | ----------------------------------------- | -------------------------- |
+| `ll`  | `ls -l`                                   | Listado largo de archivos  |
+| `ls`  | `ls -F --color=auto --show-control-chars` | Listado con formato visual |
+
+### 🪟 Ejecutables Windows bajo MSYS/Git Bash
+
+| Alias    | Comando             | Descripción                                    |
+| -------- | ------------------- | ---------------------------------------------- |
+| `node`   | `winpty node.exe`   | Ejecutar Node.js con compatibilidad de consola |
+| `php`    | `winpty php.exe`    | Ejecutar PHP con compatibilidad de consola     |
+| `winget` | `winpty winget.exe` | Ejecutar Winget con compatibilidad de consola  |
+
+> Todos estos alias están definidos en `scripts/aliases.sh` y se cargan automáticamente al ejecutar `link-scripts.sh`.
 
 ---
 
