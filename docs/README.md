@@ -9,6 +9,7 @@ Este directorio contiene las guías detalladas para cada uno de los scripts incl
 - [`setup.sh`](./setup.md): configura enlaces simbólicos y adapta el entorno según el sistema operativo.
 - [`init-personal-dev-kit.sh`](./init-personal-dev-kit.md): genera estructura base del repositorio con archivos clave y configuración Git personalizada.
 - [`crear_proyecto.sh`](./crear-proyecto.md): inicializa nuevos proyectos con estructura profesional, adaptable por lenguaje o plantilla.
+- [`link-scripts.sh`](./link-scripts.md): crea enlaces simbólicos multiplataforma y configura la carga de alias en el entorno bash.
 
 ---
 
